@@ -146,7 +146,7 @@ class RosNMEADriver(object):
                     longitude = -longitude
                 current_fix.longitude = longitude
 
-                current_fix.altitude = float('NaN')
+                current_fix.altitude = 0. # float('NaN')
                 current_fix.position_covariance_type = \
                     NavSatFix.COVARIANCE_TYPE_UNKNOWN
 
